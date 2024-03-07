@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student register form</title>
+</head>
+
+<body>
+    <h1>Student Register Form</h1>
+    <form id="register-student">
+        <label for="full-name">Full Name: </label>
+        <input autocomplete="off" name="fullname" id="full-name" type="text" placeholder="enter your fullname..."
+            minlength="5" maxlength="30" required> <br>
+        <label for="age">Age: </label>
+        <input name="age" id="age" type="number" min="16" max="50" placeholder="enter your age..."><br>
+        <label for="birth-date">Birth Date: </label>
+        <input name="birthdate" id="birth-date" type="date"> <br>
+        <label for="email">Email: </label>
+        <input name="email" id="email" type="email" placeholder="enter your email..."> <br>
+        <label for="password">Password: </label>
+        <input name="password" id="password" type="password" placeholder="enter your password"> <br>
+        <label for="url">Github URL: </label>
+        <input name="github-url" id="url" type="url" placeholder="enter github url"> <br>
+        <label for="male">Male: </label>
+        <input name="gender" id="male" type="radio">
+        <label for="female">Female: </label>
+        <input name="gender" id="female" type="radio"> <br>
+        <label for="profile">Profile Picture: </label>
+        <input name="profile" id="profile" type="file" accept="image/*"> <br>
+        <label for="terms-of-use">Accept terms of use</label>
+        <input name="accept-terms-of-use" id="terms-of-use" type="checkbox"> <br>
+        <label for="credit">Credit</label>
+        <input name="credit" id="credit" type="range" min="0" max="1000" step="500"> <br>
+        <label for="hair-color">Hair color: </label>
+        <input name="hair-color" id="hair-color" type="color"> <br>
+        <br>
+        <label for="nationality">Nationality</label>
+        <select name="nationality" id="nationality">
+            <option disabled>Select your country</option>
+            <option value="az">Azerbaijan</option>
+            <option value="ru">Russia</option>
+            <option value="uk">Ukraine</option>
+            <option value="tr">Turkey</option>
+        </select>
+        <br>
+        <hr>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+            <optgroup label="Korean Cars">
+                <option value="kia">Kia</option>
+                <option value="hyundai">Hyundai</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+        <textarea cols="50" rows="10"></textarea>
+        <!-- resize textarea -->
+        <!-- fieldset, legend -->
+        <button type="submit">register</button>
+        <button type="reset">cancel</button>
+    </form>
+
+    <input form="register-student" type="text" placeholder="test">
+</body>
+
+</html>
