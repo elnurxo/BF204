@@ -1,0 +1,28 @@
+button{
+    border: none;
+    border-radius: 6px;
+    background-color: indianred;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    background-color: red;
+}
+button:hover+p{
+    color: blue;
+}
+input:checked{
+    accent-color: black;
+    width: 40px;
+    height: 40px;
+}
+button:disabled{
+    color: red;
+}
+p:nth-of-type(){
+    color: blueviolet;
+}
+p:only-child{
+
+}

@@ -1,0 +1,63 @@
+.title {
+  color: red;
+}
+.title.heading {
+  color: blueviolet;
+}
+.box .title {
+  color: aquamarine;
+}
+#content {
+  color: chartreuse;
+}
+* {
+  color: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.box .inner-box p#title{
+    color: pink;
+}
+
+p#title.test.content span{
+
+}
+
+.box>p{
+
+}
+div.box>p{
+    text-decoration: underline;
+    color: olive;
+}
+.box>p+h1+div.inner-box>p+a{
+    color: aqua;
+}
+ul~span{
+    color: red;
+}
+[href*='.az']{
+    text-decoration: none;
+    color:green;
+}
+.box{
+    border: 10px solid red;
+}
+.navbar{
+    border: 10px solid green;
+}
+.logo{
+    border: 10px solid blue;
+}
+
+
+

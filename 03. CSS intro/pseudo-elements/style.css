@@ -1,0 +1,63 @@
+article {
+  border: 1px solid black;
+}
+/* universal selector */
+*::selection {
+  color: black;
+  background-color: red;
+}
+li::marker {
+  color: red;
+}
+p::first-letter {
+  font-size: 30px;
+  color: red;
+}
+p::first-line {
+  font-style: italic;
+}
+.icon {
+  position: relative;
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.icon::before {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  display: inline;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: black;
+}
+.icon::after {
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  display: inline;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: black;
+}
+.home {
+  position: relative;
+}
+.home:hover {
+  color: red;
+  cursor: pointer;
+}
+.home::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: black;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
