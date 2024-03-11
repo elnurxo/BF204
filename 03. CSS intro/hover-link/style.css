@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.box{
+    width: 400px;
+    height: 350px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.link h3::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0%;
+    right: 0;
+    height: 2px;
+    background-color: black;
+    transition: .3s;
+}
+.link h3:hover::after{
+    width: 100%;
+}
