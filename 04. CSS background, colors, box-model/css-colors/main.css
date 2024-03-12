@@ -1,0 +1,18 @@
+h2{
+    color: darkviolet;
+}
+h2+ul li:first-child{
+   color: rgb(40, 128, 217);
+}
+h2+ul li:nth-child(2){
+    color: rgba(40, 147, 33, 0.912);
+}
+h2+ul li:nth-child(3){
+    color: #FF69B4;
+}
+h2+ul li:nth-child(4){
+    color: hsl(0, 70%, 50%);
+}
+h2+ul li:nth-child(5){
+    color: hsla(0, 70%, 50%, 0.594);
+}
