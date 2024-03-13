@@ -1,0 +1,46 @@
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+.linear-box{
+    width: 70vw;
+    height: 550px;
+    border: 2px solid black;
+    margin: 40px auto;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    /* background-color: olive; */
+    background-image: linear-gradient(to right,rgba(0, 128, 0, 0.15), green);
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: radial-gradient(circle,red 5%, yellow 30%, orange);
+}
+.conic{
+    width: 400px;
+    height: 440px;
+    border: 2px solid olive;
+    margin: 30px auto;
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+}
+#movie{
+    width: 70vw;
+    height: 550px;
+    margin: 40px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.605), rgba(21, 21, 24, 0.517)),url('https://c4.wallpaperflare.com/wallpaper/375/519/665/comics-tmnt-teenage-mutant-ninja-turtles-wallpaper-preview.jpg');
+    transition: 300ms;
+    filter: grayscale(100%);
+}
+#movie:hover{
+    filter: grayscale(0);
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/375/519/665/comics-tmnt-teenage-mutant-ninja-turtles-wallpaper-preview.jpg');
+}

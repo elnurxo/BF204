@@ -1,0 +1,66 @@
+.box{
+    width: 60vw;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 40px auto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-family: 'Roboto';
+    text-shadow: 1px 1px 3px green;
+    transition: .3s;
+}
+h1:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.box ul{
+    list-style: none;
+}
+.box ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 7px;
+    transition: 400ms;
+}
+.box ul li:hover{
+    background-color: red;
+}
+.box ul li:hover a i{
+    color: white;
+}
+.box ul li a i{
+    font-size: 33px;
+}
+.box ul li:first-child{
+    border: 1px solid #E50071;
+}
+.box ul li:nth-child(2){
+    border: 1px solid #1C96E8;
+}
+.box ul li:nth-child(3){
+    border: 1px solid #F70000;
+}
+.box ul li:last-child{
+    border: 1px solid #2A2F35;
+}
+.fa-instagram{
+    color: #E50071;
+}
+.fa-x-twitter{
+    color: #1C96E8;
+}
+.fa-youtube{
+    color: #F70000;
+}
+.fa-github{
+    color: #2A2F35;
+}

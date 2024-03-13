@@ -1,0 +1,29 @@
+article h1{
+    color: red;
+    background-color: lightgray;
+    text-align: center;
+    text-shadow: 3px 3px 4px black;
+}
+p{
+   /* text-align-last: right; */
+   text-align: justify;
+   /* direction: rtl;
+   unicode-bidi: bidi-override; */
+   text-indent: 100px;
+   /* white-space: pre; */
+}
+article ul li:first-child{
+    text-decoration-line:underline;
+    text-decoration-color: gray;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    /* text-decoration: line-through red double 1px; */
+}
+article ul li:nth-child(2){
+    text-transform: capitalize;
+}
+article ul li:nth-child(3){
+    letter-spacing: 7px;
+    line-height: 1.7em;
+    word-spacing: 40px;
+}
