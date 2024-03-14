@@ -1,0 +1,154 @@
+.box {
+  width: 70%;
+  height: 500px;
+  border: 2px solid black;
+  margin: 40px auto;
+  position: relative;
+}
+.box .inner-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* animation-name: movement;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+  animation: movement 4s linear infinite,
+    color-change 4s linear infinite;
+  /* animation-fill-mode: both; */
+}
+/* .box:hover .inner-box {
+  animation-play-state: paused;
+} */
+
+@keyframes movement {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: calc(100% - 100px);
+    top: 0;
+  }
+  50% {
+    left: calc(100% - 100px);
+    top: calc(100% - 100px);
+  }
+  75% {
+    left: 0;
+    top: calc(100% - 100px);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.heart-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.heart-box i{
+    font-size: 65px;
+    color: red;
+    animation-name: heart-beat;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes heart-beat {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.4);
+    }
+}
+hr{
+    margin: 150px 0;
+}
+
+hr+h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.road{
+    margin: 200px 0;
+    border-bottom: 3px solid black;
+    position: relative;
+}
+.road i{
+    position: absolute;
+    bottom: 0;
+    font-size: 40px;
+    color: purple;
+    transform: rotate(-45deg);
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes drive {
+    from{
+        left: 0;
+    }
+    to{
+        left: calc(100% - 50px);
+        transform: rotateY(180deg);
+    }
+}
+body{
+    height: 300vh;
+}
+.cd-player{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cd-player img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name:  cd-player;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cd-player {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

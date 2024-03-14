@@ -1,0 +1,218 @@
+.outer-box {
+  border: 5px dotted green;
+  width: 75%;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.box {
+  width: 60%;
+  height: 500px;
+  border: 4px solid black;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 30%);
+}
+.box .inner-box {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+hr {
+  margin: 50px 0;
+}
+.purple-box {
+  width: 700px;
+  height: 500px;
+  background-color: purple;
+  margin: 0 auto;
+  position: relative;
+}
+.pink-box {
+  width: 500px;
+  height: 300px;
+  background-color: pink;
+  position: absolute;
+  left: calc(50% - 250px);
+  top: calc(50% - 150px);
+  z-index: 2;
+}
+.yellow-box {
+  background-color: yellow;
+  border: 3px dotted black;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: calc(50% - 150px);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+h4 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+#contact {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  border-radius: 10px;
+  margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#contact iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  position: absolute;
+  left: calc(50% - 150px);
+  top: -50px;
+  width: 300px;
+  height: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.contact-form input {
+  padding: 10px;
+  font-family: "Roboto";
+}
+.contact-form button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: skyblue;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+#movie {
+  position: relative;
+  width: 70%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#movie img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title {
+  position: absolute;
+  width: 200px;
+  top: -100px;
+  left: calc(50% - 100px);
+  z-index: 1;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 7px;
+  color: red;
+  transition: 300ms;
+}
+#movie:hover .title {
+  top: calc(50% - 50px);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  background: rgb(42, 103, 62);
+  background: linear-gradient(
+    43deg,
+    rgba(42, 103, 62, 1) 0%,
+    rgba(29, 253, 43, 1) 40%,
+    rgba(177, 231, 157, 1) 99%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+nav .links {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+}
+nav .links li a {
+  color: black;
+  font-family: "Roboto";
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav .links li a::after {
+  position: absolute;
+  right: 0;
+  width: 0;
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: black;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+nav .links li:hover a::after {
+  width: 100%;
+}
+main{
+    padding-top: 120px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.to-top{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-top i{
+    font-size: 30px;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
