@@ -1,0 +1,74 @@
+@import "./reset";
+@import "./variables";
+@import "./mixins";
+@import "./extends";
+// @use "./variables" as colors;colors
+// @forward
+
+.box {
+    button {
+        border: none;
+        background-color: $primary-color;
+        padding: $btn-padding;
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+        border: $btn-border;
+        font-size: $primary-font-size;
+    }
+}
+
+span {
+    font-size: $primary-font-size;
+}
+
+.form {
+    border: $btn-border;
+
+    &__input {
+        padding: $btn-padding;
+        border-radius: 5px;
+    }
+
+    &__btn {
+        padding: $btn-padding;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+}
+
+
+
+.btn{
+    @extend %shared-btn;
+}
+.btn-primary{
+    @include btn-generate($hover-color:skyblue,$bgc:blue);
+}
+.btn-success{
+    @include btn-generate(seagreen,green);
+}
+.btn-danger{
+    @include btn-generate(orange, red);
+}
+
+.box {
+    width: 70%;
+    height: 400px;
+    margin: 40px auto;
+    border: $btn-border;
+    @extend %center-div;
+    .inner-box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+}
+
+@include for-phone-only{
+   body{
+    background-color: red;
+   }
+}

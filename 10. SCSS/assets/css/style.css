@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.box button {
+  border: none;
+  background-color: hotpink;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+}
+
+span {
+  font-size: 16px;
+}
+
+.form {
+  border: 1px solid lightgrey;
+}
+.form__input {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.form__btn {
+  padding: 10px 20px;
+}
+.form__btn:hover {
+  background-color: red;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+  transition: 0.3s linear;
+}
+.btn-primary:hover {
+  background-color: skyblue;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  transition: 0.3s linear;
+}
+.btn-success:hover {
+  background-color: seagreen;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+  transition: 0.3s linear;
+}
+.btn-danger:hover {
+  background-color: orange;
+}
+
+.box {
+  width: 70%;
+  height: 400px;
+  margin: 40px auto;
+  border: 1px solid lightgrey;
+}
+.box .inner-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+@media (max-width: 599px) {
+  body {
+    background-color: red;
+  }
+}/*# sourceMappingURL=style.css.map */
